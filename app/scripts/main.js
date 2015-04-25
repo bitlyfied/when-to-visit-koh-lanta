@@ -13,12 +13,17 @@ $(function(){
     });
 
     this.select = function($answer) {
-      this.resetSelection();
+      this.dimm();
+      $answer.removeClass('dimmed');
       $answer.addClass('selected');
-      jumpTo(pos+1);
+
+      setTimeout(function() {
+        jumpTo(pos+1)
+      }, 500);
     };
 
-    this.resetSelection = function() {
+    this.dimm = function() {
+      $answers.addClass('dimmed');
       $answers.removeClass('selected');
     };
   };

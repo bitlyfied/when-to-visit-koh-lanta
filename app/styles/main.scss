@@ -1,0 +1,78 @@
+$icon-font-path: '../fonts/';
+
+// bower:scss
+@import "bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+// Custom Variables
+
+$primary-color: #D1F2A5;
+$secondary-color: #EFFAB4;
+$third-color: #FFC48C;
+$accent-color: #F56991;
+
+.page-header h1 {
+  background-color: $primary-color;
+  padding: 20px;
+}
+
+.quiz-box {
+  margin-bottom: 80px;
+}
+
+.question {
+  margin-bottom: 10px;
+}
+
+.answer-box {
+  background-color: $third-color;
+  position: relative;
+  border: 1px solid black;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+
+  &.selected {
+    border: 1px solid red;
+
+    .answer-tick-box {
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      background: #000;
+    }
+  }
+
+  &:hover {
+    background-color: $accent-color;
+  }
+}
+
+.answer-image {
+  margin-bottom: 10px;
+}
+
+.answer-tick-box {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background: #aaa;
+}
+
+.answer-caption {
+  display: inline-block;
+}
+
+.img-responsive {
+  width: 100%;
+}
+
+.page-header {
+  margin-top: 0;
+}
+
+.footer {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: $secondary-color;
+}

@@ -237,11 +237,14 @@
       <div class="quiz-box solution">
         <div class="row" id="q5">
           <div class="question col-md-12">
-            <h2>Wait... what?! 😳</h2>
+            <h2>Wait... what?!!! 😳</h2>
             <img class="img-responsive" src="images/quizzes/solution.jpg" />
             <h1>It doesn't matter! It's always a great time to visit Koh Lanta! 😉 </h1>
             <h3>Visit <a href="http://lanta.info">lanta.info</a> for more information.</h3>
-            <h3><a href="https://twitter.com/share?url=http://www.google.com">Post this on Twitter</a> with the hashtag <strong>#alwayskohlanta</strong></h3>
+            <h3>
+              <script>document.writeln('<a href="https://twitter.com/share?via=kohuborg&text=Find out when is the best time for you to visit Koh Lanta! %23alwayslanta&url=' + document.location.href + '">Post this on Twitter</a>');</script>
+              with the hashtag <strong>#alwayslanta</strong>
+            </h3>
           </div>
         </div>
       </div>
@@ -260,26 +263,12 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/jquery-smooth-scroll/jquery.smooth-scroll.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
-        <!-- build:js scripts/plugins.js -->
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
-        <!-- endbuild -->
-
-        <!-- build:js scripts/main.js -->
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
 </body>
 </html>

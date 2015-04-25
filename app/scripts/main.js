@@ -29,7 +29,10 @@ $(function(){
   };
 
   function jumpTo(pos) {
-    document.location.hash = '#q' + pos;
+    $.smoothScroll({
+      scrollTarget: '#q' + pos
+    });
+    //document.location.hash = '#q' + pos;
   }
 
   var quizzes = [];

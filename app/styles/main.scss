@@ -1,5 +1,8 @@
 $icon-font-path: '../fonts/';
 
+// Box sizing partial styles:
+// Apply a natural box layout model to all elements
+
 // bower:scss
 @import "bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
@@ -12,7 +15,7 @@ $third-color: #FFC48C;
 $accent-color: #F56991;
 
 .container {
-  max-width:1000px;
+  max-width: 800px;
 }
 
 .page-header h1 {
@@ -29,20 +32,18 @@ $accent-color: #F56991;
 }
 
 .answer-box {
-  background-color: $third-color;
+  background-color: $primary-color;
   position: relative;
-  border: 1px solid black;
   padding: 10px;
   margin-bottom: 10px;
   cursor: pointer;
+  border: 1px solid transparent;
 
   &.selected {
+    background-color: $accent-color;
     border: 1px solid red;
 
     .answer-tick-box {
-      width: 20px;
-      height: 20px;
-      display: inline-block;
       background: #000;
     }
   }
@@ -53,6 +54,9 @@ $accent-color: #F56991;
 
   &:hover {
     background-color: $accent-color;
+    .answer-caption {
+      color: white;
+    }
   }
 }
 
@@ -63,12 +67,14 @@ $accent-color: #F56991;
 .answer-tick-box {
   width: 20px;
   height: 20px;
-  display: inline-block;
+  display: none;
   background: #aaa;
 }
 
 .answer-caption {
   display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .img-responsive {

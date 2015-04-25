@@ -19,7 +19,7 @@ $(function(){
 
       setTimeout(function() {
         jumpTo(pos+1)
-      }, 500);
+      }, 300);
     };
 
     this.dimm = function() {

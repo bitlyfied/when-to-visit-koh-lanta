@@ -10,9 +10,23 @@ $icon-font-path: '../fonts/';
 // Custom Variables
 
 $primary-color: #D1F2A5;
+$primary-color-medium: #77a23c;
+$primary-color-dark: #2b4b29;
 $secondary-color: #EFFAB4;
 $third-color: #FFC48C;
 $accent-color: #F56991;
+
+body {
+  color: $primary-color-dark;
+}
+
+a {
+  color: $primary-color-medium;
+
+  &:hover, &:active {
+    color: $primary-color-medium;
+  }
+}
 
 .container {
   max-width: 800px;
@@ -21,10 +35,14 @@ $accent-color: #F56991;
 .page-header h1 {
   background-color: $primary-color;
   padding: 20px;
+
+  small {
+    color: $primary-color-medium;
+  }
 }
 
 .quiz-box {
-  margin-bottom: 80px;
+  margin-bottom: 280px;
 }
 
 .question {
@@ -87,10 +105,8 @@ $accent-color: #F56991;
 
 .solution {
   margin-top: 1500px;
-}
 
-.footer {
-  margin-top: 20px;
-  padding: 20px;
-  background-color: $secondary-color;
+  h1 {
+    font-size: 40px;
+  }
 }

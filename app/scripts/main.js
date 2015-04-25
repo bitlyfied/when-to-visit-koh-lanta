@@ -1,5 +1,5 @@
 /* jshint devel:true */
-
+'use strict';
 
 $(function(){
 
@@ -18,7 +18,7 @@ $(function(){
       $answer.addClass('selected');
 
       setTimeout(function() {
-        jumpTo(pos+1)
+        jumpTo(pos+1);
       }, 300);
     };
 
